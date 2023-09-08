@@ -22,7 +22,7 @@ class MainFragmentTest {
 
     @Test
     fun startAppAndPressButton() {
-        launchFragmentInHiltContainer<MainFragment>()
+        launchFragmentInHiltContainer<MainFragmentLifted>()
 
         onView(withId(R.id.button)).perform(click())
 
