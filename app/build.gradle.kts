@@ -64,7 +64,7 @@ tasks.register<JacocoReport>("jacocoTestReport") {
 
     val kotlinClasses = fileTree(
         mapOf(
-            "dir" to "${buildDir}/tmp/kotlin-classes/debug",
+            "dir" to "${buildDir}/intermediates/classes/debug/transformDebugClassesWithAsm/dirs",
             "excludes" to excludes
         )
     )
